@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pinLockBG"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/pinLockHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/traka_holder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_76sdp"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/text_view_enter_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/enter_password"
+                android:textColor="@color/enter_password_text_color"
+                android:textSize="@dimen/_20sdp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/traka_holder">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/pins_holder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_31sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/pin_1"
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        app:srcCompat="@drawable/pin_empty" />
+
+                    <ImageView
+                        android:id="@+id/pin_2"
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        app:srcCompat="@drawable/pin_empty" />
+
+                    <ImageView
+                        android:id="@+id/pin_3"
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        app:srcCompat="@drawable/pin_empty" />
+
+                    <ImageView
+                        android:id="@+id/pin_4"
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        app:srcCompat="@drawable/pin_empty" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/pin_btn_1"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            app:srcCompat="@drawable/btn_1_click" />
+
+                        <ImageView
+                            android:id="@+id/pin_btn_2"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_marginLeft="@dimen/_18sdp"
+                            android:layout_marginRight="@dimen/_18sdp"
+                            app:srcCompat="@drawable/btn_2_click" />
+
+                        <ImageView
+                            android:id="@+id/pin_btn_3"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            app:srcCompat="@drawable/btn_3_click" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/pin_btn_4"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            app:srcCompat="@drawable/btn_4_click" />
+
+                        <ImageView
+                            android:id="@+id/pin_btn_5"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_margin="@dimen/_18sdp"
+                            app:srcCompat="@drawable/btn_5_click" />
+
+                        <ImageView
+                            android:id="@+id/pin_btn_6"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            app:srcCompat="@drawable/btn_6_click" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/pin_btn_7"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            app:srcCompat="@drawable/btn_7_click" />
+
+                        <ImageView
+                            android:id="@+id/pin_btn_8"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_marginLeft="@dimen/_18sdp"
+                            android:layout_marginRight="@dimen/_18sdp"
+                            app:srcCompat="@drawable/btn_8_click" />
+
+                        <ImageView
+                            android:id="@+id/pin_btn_9"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            app:srcCompat="@drawable/btn_9_click" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:visibility="invisible"
+                            app:srcCompat="@drawable/btn_backspace" />
+
+                        <ImageView
+                            android:id="@+id/pin_btn_0"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_marginLeft="@dimen/_18sdp"
+                            android:layout_marginRight="@dimen/_18sdp"
+                            app:srcCompat="@drawable/btn_0_click" />
+
+                        <ImageView
+                            android:id="@+id/pin_btn_backspace"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/btn_backspace_click" />
+
+                        <ImageView
+                            android:id="@+id/pin_btn_cancel"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            app:srcCompat="@drawable/btn_cancel_click" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.kedarnath.zipperlockscreen.Apputils.MyImageViewHorizontal
+        android:id="@+id/imgZipperHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.kedarnath.zipperlockscreen.Apputils.MyImageViewVertical
+        android:id="@+id/imgZipperVertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/relativeTDBHolder"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="15:38"
+            android:textColor="@color/time_text_color"
+            android:textSize="@dimen/_26sdp" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_above="@+id/relativeNotifications"
+            android:layout_below="@+id/txtTime"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_6sdp"
+            android:paddingRight="@dimen/_6sdp"
+            android:text="Mon, 20 Feb 2017"
+            android:textColor="@color/date_text_color"
+            android:textSize="@dimen/_16sdp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeNotifications"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/imgMissedCall"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/missed_call" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/bateryRelative"
+                android:layout_toRightOf="@+id/imgMissedCall"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imgMissedSms"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/missed_sms" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bateryRelative"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/imgBattery"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    app:srcCompat="@drawable/battery" />
+
+                <TextView
+                    android:id="@+id/txtBattery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/imgBattery"
+                    android:gravity="center"
+                    android:text="99%"
+                    android:textColor="@color/battery_text_color"
+                    android:textSize="@dimen/_11sdp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

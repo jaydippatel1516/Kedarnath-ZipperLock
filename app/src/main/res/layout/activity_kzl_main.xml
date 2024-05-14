@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_" />
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+
+        <ImageView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:gravity="center"
+            android:src="@drawable/start_name" />
+        <ImageView
+            android:id="@+id/gift"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_8sdp"
+            android:src="@drawable/gift" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp">
+
+                <FrameLayout
+                    android:id="@+id/ad_native"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/enable_lockscreen_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/lock_screen_btn" />
+
+                    <CheckBox
+                        android:id="@+id/enable_lockscreen_checkbox"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_23sdp"
+                        android:background="@drawable/checkbox_image"
+                        android:button="@android:color/transparent"
+                        android:checked="false"
+                        android:clickable="false" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/enable_pinlock_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/enable_pin_lock_btn" />
+
+
+                    <CheckBox
+                        android:id="@+id/enable_pinlock_checkbox"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_23sdp"
+                        android:background="@drawable/checkbox_image"
+                        android:button="@android:color/transparent"
+                        android:checked="false"
+                        android:clickable="false" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/set_password_btn"
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:src="@drawable/set_password_btn" />
+
+            <ImageView
+                android:id="@+id/customize_btn"
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/customize_btn" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

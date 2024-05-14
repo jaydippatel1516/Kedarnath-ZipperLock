@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/date_format_item_bg"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="@dimen/_35sdp"
+    android:layout_marginTop="@dimen/_2sdp"
+    android:layout_marginBottom="@dimen/_2sdp"
+    android:background="@drawable/edt_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/date_format_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="E, d MMM yyyy"
+        android:textColor="@color/date_format_item_text_color"
+        android:textSize="@dimen/_15sdp" />
+</RelativeLayout>

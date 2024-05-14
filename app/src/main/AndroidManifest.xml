@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Kedarnath"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".KedarnathWallpaper.Activity.ViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KedarnathWallpaper.Activity.TopWallpaperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KedarnathWallpaper.Activity.UniqueWallpaperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KedarnathWallpaper.Activity.ClassicWallpaperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KedarnathWallpaper.Activity.DailyWallpaperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KedarnathWallpaper.Activity.HD4KWallpaperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KedarnathWallpaper.Activity.KSWCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.KZL_DateTimeFormatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.KZL_BZPSetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.KZL_LockPreviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.KZL_CustomizeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.KZL_MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.KZL_LetsStartActvity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.KZL_SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.LockActivity"
+            android:launchMode="singleTask" />
+
+        <service
+            android:name=".Service.LockScreenService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Service.OverlayPermissionIntentService"
+            android:exported="false" />
+        <service
+            android:name=".Service.NLService"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".Receiver.LockScreenReceiver" />
+        <receiver
+            android:name=".Receiver.BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+    </application>
+
+
+</manifest>

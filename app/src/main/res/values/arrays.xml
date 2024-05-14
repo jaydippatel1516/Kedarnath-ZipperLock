@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="date_formats">
+        <item>E, d MMM yyyy</item>
+        <item>EEE, d/M/yyyy</item>
+        <item>EEE, M/d/yyyy</item>
+        <item>d/M/yyyy</item>
+        <item>M/d/yyyy</item>
+        <item>EEE, d.M.yyyy</item>
+        <item>EEE, M.d.yyyy</item>
+        <item>d.M.yyyy</item>
+        <item>M.d.yyyy</item>
+    </array>
+    <array name="fireRate">
+        <item>1</item>
+    </array>
+</resources>
